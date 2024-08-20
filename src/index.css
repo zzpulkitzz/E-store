@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+.animate-anim_hover_line_0_css{
+    animation:anim_hover_line_prop_0 1s ease-in-out forwards;
+
+}
+.animate-anim_hover_line_1_css{
+    animation:anim_hover_line_prop_1 1s ease-in-out forwards;
+    
+}
+.animate-anim_hover_line_2_css{
+    animation:anim_hover_line_prop_2 1s ease-in-out forwards;
+    
+}
+.animate-anim_hover_line_3_css{
+    animation:anim_hover_line_prop_3 1s ease-in-out forwards;
+}
+
+
+.animate-anim_hover_line_exit_0_css{
+    animation:anim_hover_line_prop_exit_0 1s ease-in-out forwards;
+
+}
+.animate-anim_hover_line_exit_1_css{
+    animation:anim_hover_line_prop_exit_1 1s ease-in-out forwards;
+    
+}
+.animate-anim_hover_line_exit_2_css{
+    animation:anim_hover_line_prop_exit_2 1s ease-in-out forwards;
+    
+}
+.animate-anim_hover_line_exit_3_css{
+    animation:anim_hover_line_prop_exit_3 1s ease-in-out forwards;
+    
+}
+.grid_container{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    gap:10% 10%;
+    margin-top: 50px;
+   
+}
+.home_apl{
+
+}
+.grooming{
+
+}
+.batteries{
+
+}
+.electricals{
+
+}
+
+@keyframes anim_hover_line_prop_0{
+    100%{
+        margin-left:30px;
+    }
+        
+}
+@keyframes anim_hover_line_prop_1{
+    100%{
+        margin-left:168px;
+    }
+        
+}
+@keyframes anim_hover_line_prop_2{
+    100%{
+        margin-left:316px;
+    }
+        
+}
+@keyframes anim_hover_line_prop_3{
+    100%{
+        margin-left:466px;
+    }
+        
+}
+
+@keyframes anim_hover_line_prop_exit_0{
+    100%{
+        margin-left:30px;
+    }
+        
+}
+@keyframes anim_hover_line_prop_exit_1{
+    100%{
+        margin-left:30px;
+    }
+        
+}
+@keyframes anim_hover_line_prop_exit_2{
+    100%{
+        margin-left:30px;
+    }
+        
+}
+@keyframes anim_hover_line_prop_exit_3{
+    100%{
+        margin-left:30px;
+    }
+        
+}
+label{
+  
+}
+
