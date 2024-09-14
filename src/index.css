@@ -59,56 +59,7 @@
 
 }
 
-@keyframes anim_hover_line_prop_0{
-    100%{
-        margin-left:30px;
-    }
-        
-}
-@keyframes anim_hover_line_prop_1{
-    100%{
-        margin-left:168px;
-    }
-        
-}
-@keyframes anim_hover_line_prop_2{
-    100%{
-        margin-left:316px;
-    }
-        
-}
-@keyframes anim_hover_line_prop_3{
-    100%{
-        margin-left:466px;
-    }
-        
-}
 
-@keyframes anim_hover_line_prop_exit_0{
-    100%{
-        margin-left:30px;
-    }
-        
-}
-@keyframes anim_hover_line_prop_exit_1{
-    100%{
-        margin-left:30px;
-    }
-        
-}
-@keyframes anim_hover_line_prop_exit_2{
-    100%{
-        margin-left:30px;
-    }
-        
-}
-@keyframes anim_hover_line_prop_exit_3{
-    100%{
-        margin-left:30px;
-    }
-        
-}
 label{
   
 }
-

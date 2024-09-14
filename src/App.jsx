@@ -11,6 +11,9 @@ import Appliance from "./shopping categories/Appliance"
 import Grooming from "./shopping categories/Grooming"
 import Battery from "./shopping categories/Battery"
 import Electricals from "./shopping categories/Electricals"
+
+import Cart from "./Cart"
+
 function App(){
     const [window_width,set_window_width]=useState(window.innerWidth)
     const [window_height,set_window_height]=useState(`${(5/6*(window.innerHeight))-44}`)
@@ -32,9 +35,13 @@ function App(){
     return <RouterProvider router={createBrowserRouter(createRoutesFromElements(
 
         <Route>
+        
         <Route path="/" element={<Navbar/>}>
             <Route index element={<Home width_chng_prcnt={width_chng_prcnt} height_chng_prcnt={height_chng_prcnt} window_height={window_height} window_width={window_width} image_scrmbl={image_scrmbl} set_scrmbl={set_scrmbl} width_chng_prcnt_dyn={width_chng_prcnt_dyn}/>}/>
+          
             <Route path="/shop" element={<Shop/>}/>
+ 
+            <Route path="/cart" element={<Cart/>}/>
             <Route path="/shop/appliance" element={<Appliance/>}/>
             <Route path="/shop/electricals" element={<Electricals/>}/>
             <Route path="/shop/grooming" element={<Grooming/>}/>

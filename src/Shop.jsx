@@ -26,7 +26,7 @@ export default function Shop(){
         <div className="grid_container h-[62vh] w-[80vw] max-w-[530px] grid m-auto min-w-[482.4px] font-oswald text-2xl justify-items-center items-center">
             <Link className="home_apl bg-[url('../images/applianceBGopaq.png')] bg-center bg-cover bg-no-repeat rounded-xl shadow-md  shadow-black flex justify-center items-center text-black hover:h-[120%] hover:w-[120%] h-[100%] w-[100%] hover:transition-all " to="/shop/appliance">HOME APPLIANCE</Link>
             <Link className="grooming bg-[url('../images/groomingBGopaq.png')] bg-cover rounded-xl  shadow-md shadow-black flex justify-center items-center  text-black hover:h-[120%] hover:w-[120%] h-[100%] w-[100%] hover:transition-all " to="/shop/grooming">GROOMING</Link>
-            <Link className="batteries bg-[url('../images/batteryBGopaq.png')] bg-cover bg-center  rounded-xl shadow-md shadow-black flex justify-center items-center  text-black hover:h-[120%] hover:w-[120%] h-[100%] w-[100%] hover:transition-all " to="/shop/batteries">BATTERIES
+            <Link className="batteries bg-[url('../images/batteryBGopaq.png')] bg-cover bg-center  rounded-xl shadow-md shadow-black flex justify-center items-center  text-black hover:h-[120%] hover:w-[120%] h-[100%] w-[100%] hover:transition-all " to="/shop/battery">BATTERIES
 
             </Link>
 

@@ -4,14 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import logoImage from '../images/GR logo_icon.jpeg'
 import logoText from '../images/GR logo_text.jpeg' 
-
+import { ShoppingCart } from 'lucide-react';
+import { LogIn } from 'lucide-react';
 import { useEffect } from 'react'
 import profileUser from '../images/profile-user.png'
 import {RouterProvider,createRoutesFromElements,createBrowserRouter,BrowserRouter , Routes,Route, Link,redirect,defer, Outlet} from 'react-router-dom'
 import {gsap} from 'gsap';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { PropTween } from 'gsap/gsap-core'
-
+import closeIcon from "../images/close.png"
+<images />
 
 function Navbar() {
   console.log("c")
@@ -25,6 +27,7 @@ function Navbar() {
     sidebar[0].classList.remove('animate-sidebar_anim_show')
     sidebar[0].classList.add("animate-sidebar_anim_hide")
     let body=document.getElementsByClassName('fade')
+    
     Array.from(body).forEach(element => {
       element.classList.remove('animate-fade_in')
       element.classList.add('animate-fade_out')
@@ -202,7 +205,7 @@ function Navbar() {
 
   
     return (
-    <><header className="header fade w-screen sticky top-0 bg-gray-400 z-10">
+    <div className=""><header className="fade header  w-screen sticky top-0 bg-gray-400 z-10">
     <div before= "CONATACT US AT 7310777296 " className="head_container  h-1/6% w-full before:content-[attr(before)] before:text-black before:inline before:h-1/6 before:w-full before:relative before:top-0 before:left-[0%] before:animate-anim_phone_num" >
       <div className="wrapper h-5/6 w-full flex justify-center  gap-0">
 
@@ -247,20 +250,36 @@ function Navbar() {
       </div>
     </div>
     </header>
-    <div className="sidebar h-screen w-[0%] absolute top-0 flex flex-row z-20">
+    <div className="sidebar h-screen w-[0%] fixed top-0 flex flex-row z-20">
       <div className="sidebar_main h-full  bg-white m-0 grow shadow-2xl w-[10%] flex flex-col ">
         
       <div className="sidebar_head h-[10%] w-full bg-black text-2xl text-white overflow-hidden whitespace-nowrap flex justify-start items-center row gap-3">
         <img src={profileUser} className="profile_icon ml-[10%] h-[25px] w-[25px]"/>
-        <div className="user_name font-semibold w-[150px] tracking-wide">Hello, {username}</div></div>
-      <Link to="/login" className="login_option pl-[10%] bg-gray-100 hover:bg-gray-200 h-[40px] flex items-center text-lg font-sans overflow-hidden" onClick={onclick}>{localStorage.getItem("username") ?  "Log Out": "Log In"}</Link>
+        <div className="user_name font-semibold w-[150px] tracking-wide">Hello, {username}</div>
+        </div>
+      
+      <Link to="/login" className="login_option pl-[10%] bg-gray-100 hover:bg-gray-200 h-[50px] flex items-center text-lg font-sans overflow-hidden" onClick={onclick}>
+      <LogIn className='mr-[5px]'/>
+        {localStorage.getItem("username") ?  "Log Out": "Log In"}</Link>
+      <Link to="/cart" className="cart_option pl-[10%] bg-gray-100 hover:bg-gray-200 h-[50px] flex items-center text-lg font-sans overflow-hidden" onClick={onclick}>
+      <ShoppingCart size={24} color="black" className='mr-[5px]' />
+        <div className="cart_icon h-[25px]">
+          My Cart
+          </div>
+          
+          </Link>
+
       </div>
-      <div className='cross flex justify-center items-start'>
-        <img className='close_icon ' src="" onClick={onclick}/>
+      <div className='cross flex justify-center items-start mt-[7px] ml-[5px]'>
+        <img className='close_icon h-[33px] ' src={closeIcon} onClick={onclick}/>
       </div>
     </div>
+    <div className="fade">
+
+    
     <Outlet />
-    </>)
+    </div>
+    </div>)
 }
 
 export default Navbar
