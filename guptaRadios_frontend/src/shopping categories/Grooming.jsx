@@ -14,7 +14,7 @@ export default function Grooming(){
         let searchBar=document.getElementsByClassName("searchBar")[1]
         
         try{
-            fetch(`http://localhost:5500/products/grooming?model=grooming&searchExp=${searchBar.value}`,{headers:{"Authorization":`Bearer ${token}`}})
+            fetch(`https://e-store-ir0d.onrender.com/products/grooming?model=grooming&searchExp=${searchBar.value}`,{headers:{"Authorization":`Bearer ${token}`}})
             .then((response)=>{
                 return response.json()
             })
@@ -61,7 +61,7 @@ export default function Grooming(){
         <div className='addCart flex justify-center items-center' id={elem._id} onClick={(obj)=>{
             
          
-            fetch(`http://localhost:5500/products/cart?id=${elem._id}`,{
+            fetch(`https://e-store-ir0d.onrender.com/products/cart?id=${elem._id}`,{
                 headers:{"Authorization":`Bearer ${token}`,
                 "Content-Type": "application/json"},
                 method:"POST",

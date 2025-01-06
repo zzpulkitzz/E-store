@@ -1,7 +1,7 @@
 import {RouterProvider,createRoutesFromElements,createBrowserRouter,BrowserRouter , Routes,Route, Link,redirect,defer, Outlet,Form} from 'react-router-dom'
 async function sendData(body){
     try{
-        let response=await fetch("http://localhost:5500/products/appliances",{
+        let response=await fetch("https://e-store-ir0d.onrender.com/products/appliances",{
         method:"POST",
         headers:{"Content-type":"application/json"},
         body: JSON.stringify(body)})

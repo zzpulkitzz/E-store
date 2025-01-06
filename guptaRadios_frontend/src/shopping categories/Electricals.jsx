@@ -10,7 +10,7 @@ export default function Grooming(){
     }
     let showData=async (token)=>{
         try{
-            fetch("http://localhost:5500/products/grooming?model=electricals",{headers:{"Authorization":`Bearer ${token}`}})
+            fetch("https://e-store-ir0d.onrender.com/products/grooming?model=electricals",{headers:{"Authorization":`Bearer ${token}`}})
             .then((response)=>{
                 return response.json()
             })
@@ -56,7 +56,7 @@ export default function Grooming(){
         </div>
         <div className='addCart flex justify-center items-center' id={elem._id} onClick={()=>{
            
-            fetch(`http://localhost:5500/products/cart?id=${elem._id}`,{
+            fetch(`https://e-store-ir0d.onrender.com/products/cart?id=${elem._id}`,{
                 headers:{"Authorization":`Bearer ${token}`,
                 "Content-Type": "application/json"},
                 method:"POST",

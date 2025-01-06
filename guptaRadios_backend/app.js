@@ -72,10 +72,10 @@ app.get("/populate",async (req,res)=>{
         res.status(500).json({error:error.message})
     }
 })
-
+const port=process.env.PORT||5500
 const asyncConnect=async ()=>{
     try{
-        app.listen(5500,()=>{
+        app.listen(port,()=>{
             console.log("jude")
         })
         await connect(process.env.USER_KEY)

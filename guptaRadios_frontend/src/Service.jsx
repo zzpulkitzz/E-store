@@ -37,7 +37,7 @@ export default function Service(){
         let handleForm=async ()=>{
             console.log("here")
             try{
-                let response =await fetch("http://localhost:5500/",{
+                let response =await fetch("https://e-store-ir0d.onrender.com/",{
                     method:"POST",
                     headers:{"Content-type":"application/json"},
                     body: JSON.stringify(formDict)

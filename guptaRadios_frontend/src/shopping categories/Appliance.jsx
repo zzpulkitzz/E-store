@@ -10,7 +10,7 @@ export default function Appliance(){
     }
     let showData=async (token)=>{
         try{
-            fetch("http://localhost:5500/products/appliances",{headers:{"Authorization":`Bearer ${token}`}})
+            fetch("https://e-store-ir0d.onrender.com/products/appliances",{headers:{"Authorization":`Bearer ${token}`}})
             .then((response)=>{
                 return response.json()
             })
@@ -57,7 +57,7 @@ export default function Appliance(){
         <div className='addCart flex justify-center items-center' id={elem._id} onClick={()=>{
             
           
-            fetch(`http://localhost:5500/products/cart?id=${elem._id}`,{
+            fetch(`https://e-store-ir0d.onrender.com/products/cart?id=${elem._id}`,{
                 headers:{"Authorization":`Bearer ${token}`,
                 "Content-Type": "application/json"},
                 method:"POST",

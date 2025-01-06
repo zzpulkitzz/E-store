@@ -13,7 +13,7 @@ export default function ShoppingCart() {
   console.log(cartItems)
   let token=localStorage.getItem('token')==null ? null : localStorage.getItem("token")
   useEffect(()=>{
-    fetch(`http://localhost:5500/products/cart`,{
+    fetch(`https://e-store-ir0d.onrender.com/products/cart`,{
                 headers:{"Authorization":`Bearer ${token}`}}
                 )
                 .then((response)=>{
