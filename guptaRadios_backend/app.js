@@ -4,9 +4,7 @@ const cors=require("cors")
 let {middleware,test}=require("./middleware.js")
 let {routerAppliances,routerBatteries,routerElectricals,routerGrooming,routerCart}=require("./controllers/router")
 let path=require('path')
-const accountSid = 'ACde02a3edf45be23648f1f3df1fbd35cb';
-const authToken = '58eb50ba35a8e9aea4dd5b19ad9215df';
-const client = require('twilio')(accountSid, authToken);
+
 
 
 const axios = require('axios');
