@@ -206,7 +206,7 @@ function Navbar() {
   
     return (
     <div className=""><header className="fade header  w-screen sticky top-0 bg-gray-400 z-10">
-    <div before= "CONATACT US AT 7310777296 " className="head_container  h-1/6% w-full before:content-[attr(before)] before:text-black before:inline before:h-1/6 before:w-full before:relative before:top-0 before:left-[0%] before:animate-anim_phone_num" >
+    <div  className="head_container  h-1/6% w-full before:content-[attr(before)] before:text-black before:inline before:h-1/6 before:w-full before:relative before:top-0 before:left-[0%] before:animate-anim_phone_num" >
       <div className="wrapper h-5/6 w-full flex justify-center  gap-0">
 
       <div className="line_container h-full flex justify-end items-center grow" >

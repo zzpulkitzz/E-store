@@ -96,7 +96,7 @@ export default function Appliance(){
 
         <div className="Refrigerator flex flex-col justify-center items-center " onClick={onclick} name="Refrigerator">
 
-            <img src="../images/fridgeIcon2.png" className="shrink h-[80px] w-1/2 flex " name="Refrigerator"></img>
+            <img src="../images/fridge-vector-icon.jpg" className="shrink h-[80px]  flex " name="Refrigerator"></img>
             <div className="Refrigerator_text flex justify-center items-center" name="Refrigerator">Refrigerator</div>
 
         </div>

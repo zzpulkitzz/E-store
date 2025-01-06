@@ -4,7 +4,7 @@ import ac from "../images/ac.png"
 import tv from "../images/tv.png"
 import washer from "../images/washer.png"
 import all from "../images/all.png"
-import Inverter from "../images/inverter.png"
+import Inverter from "../images/Inverter.png"
 import introCard from '../images/introCard.png'
 import oven from "../images/oven.png"
 import grooming from "../images/grooming.png"

@@ -84,34 +84,33 @@ export default function Grooming(){
 
         <div className="Plug flex flex-col items-center" onClick={onclick} name="Plug">
 
-            <img src="../images/wmIcon.png " className="shrink flex justify-center items-center w-[80%]" name="Plug"></img>
             <div className="Plug_text flex justify-center items-center" name="Plug">Livguard</div>
         
         </div>
 
         <div className="Socket flex flex-col justify-center items-center " onClick={onclick} name="Socket">
 
-            <img src="../images/fridgeIcon2.png" className="shrink h-[80px] w-1/2 flex " name="Socket"></img>
+          
             <div className="Socket_text flex justify-center items-center" name="Socket">Socket</div>
 
         </div>
 
         <div className="LED flex flex-col items-center" onClick={onclick} name="Bikini Trimmer">
 
-            <img src="../images/acIcon.png" className="shrink flex justify-center items-center w-[90%] " name="LED Bulb"></img>
+       
             <div className="LEDBulb_text flex justify-center items-center" name="LED Bulb">LED Bulb</div>
 
         </div>
 
         <div className="Wire flex flex-col items-center" onClick={onclick} name="Wire">
 
-            <img src="../images/acIcon.png" className="shrink flex justify-center items-center w-[90%] " name="Wire"></img>
+      
             <div className="Wire_text flex justify-center items-center" name="Wire">Wire</div>
 
         </div>
         <div className="Extension Board flex flex-col items-center" onClick={onclick} name="Extension Boardr">
 
-            <img src="../images/acIcon.png" className="shrink flex justify-center items-center w-[90%] " name="Extension Board"></img>
+          
             <div className="Extension Board_text flex justify-center items-center" name="Extension Board">Extension Board</div>
 
         </div>

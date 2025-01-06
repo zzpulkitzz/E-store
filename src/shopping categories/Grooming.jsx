@@ -93,34 +93,33 @@ export default function Grooming(){
 
         <div className="Trimmer flex flex-col items-center" onClick={onclick} name="Trimmer">
 
-            <img src="../images/wmIcon.png " className="shrink flex justify-center items-center w-[80%]" name="Trimmer"></img>
+     
             <div className="trimmer_text flex justify-center items-center" name="Trimmer">Trimmer</div>
         
         </div>
 
         <div className="Hair Clipper flex flex-col justify-center items-center " onClick={onclick} name="Hair Clipper">
 
-            <img src="../images/fridgeIcon2.png" className="shrink h-[80px] w-1/2 flex " name="Hair Clipper"></img>
+          
             <div className="HairClipper_text flex justify-center items-center" name="Hair Clipper">Hair Clipper</div>
 
         </div>
 
         <div className="Bikini Trimmer flex flex-col items-center" onClick={onclick} name="Bikini Trimmer">
 
-            <img src="../images/acIcon.png" className="shrink flex justify-center items-center w-[90%] " name="Bikini Trimmer"></img>
+
             <div className="BikiniTrimmer_text flex justify-center items-center" name="Bikini Trimmer">Bikini Trimmer</div>
 
         </div>
 
         <div className="Hair Straightener flex flex-col items-center" onClick={onclick} name="Hair Straightener">
 
-            <img src="../images/acIcon.png" className="shrink flex justify-center items-center w-[90%] " name="Hair Straightener"></img>
             <div className="HairStraightener_text flex justify-center items-center" name="Hair Straightener">Hair Straightener</div>
 
         </div>
         <div className="Hair Dryer flex flex-col items-center" onClick={onclick} name="Hair Dryer">
 
-            <img src="../images/acIcon.png" className="shrink flex justify-center items-center w-[90%] " name="Hair Dryer"></img>
+  
             <div className="HairDryer_text flex justify-center items-center" name="Hair Dryer">Hair Dryer</div>
 
         </div>

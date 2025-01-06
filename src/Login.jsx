@@ -38,20 +38,20 @@ export async function Action({request}){
 }
 export default function Login(){
     return <main className="main h-[500px] w-screen  mt-9">
-    <div className="form_container h-[85%] w-[60%] bg-black m-auto pl-6 pr-6 pt-3 pb-3 ">
+    <div className="form_container h-[85%] w-[60%] bg-blue-200 m-auto pl-6 pr-6 pt-3 pb-3 ">
 
         <Form method="post" className="form flex flex-col justify-around h-full w-full" replace>
         <input
                     name="email"
                     type="email"
                     placeholder="Email address"
-                    className='bg-white text-black text-lg h-12 rounded-md pl-1'
+                    className='bg-white text-black text-lg h-12 border-black border-2 rounded-md pl-1 '
                 />
                 <input
                     name="password"
                     type="password"
                     placeholder="Password"
-                    className="bg-white text-black text-lg h-12 rounded-md pl-1"
+                    className="bg-white text-black text-lg h-12 rounded-md pl-1 border-black border-2 "
                 />
                 <button disabled={ navigation.state==="submitting"} className="h-10 bg-blue-400 w-[150px] ml-auto mr-auto rounded-sm">LOGIN</button>
         </Form>
